@@ -10,7 +10,7 @@ import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(current_dir)
 
-from ui.MainWindow import MainWindow
+from ui.GamifiedMainWindow import GamifiedMainWindow
 
 
 def main():
@@ -19,7 +19,7 @@ def main():
     """
     try:
         # Uygulamayı başlat
-        app = MainWindow()
+        app = GamifiedMainWindow()
         app.run()
         
     except KeyboardInterrupt:
