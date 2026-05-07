@@ -1,0 +1,105 @@
+# Git Kurulum ve Kullanım Talimatları
+
+## Git Kurulumu
+
+### Windows için Git Kurulumu
+1. https://git-scm.com/download/win adresinden Git'i indirin
+2. Kurulum dosyasını çalıştırın ve talimatları izleyin
+3. Kurulum sırasında "Use Git from the Windows Command Prompt" seçeneğini seçin
+
+### macOS için Git Kurulumu
+```bash
+# Homebrew ile
+brew install git
+
+# veya Xcode Command Line Tools ile
+xcode-select --install
+```
+
+### Linux için Git Kurulumu
+```bash
+# Ubuntu/Debian
+sudo apt-get update
+sudo apt-get install git
+
+# Fedora
+sudo dnf install git
+
+# Arch Linux
+sudo pacman -S git
+```
+
+## Git Kullanımı için Örnek Komutlar
+
+Bu proje için Git kullanımı:
+
+```bash
+# 1. Git reposunu başlat
+git init
+
+# 2. Kullanıcı bilgilerini ayarla (ilk seferde)
+git config user.name "Adınız Soyadınız"
+git config user.email "email@example.com"
+
+# 3. Tüm dosyaları ekle
+git add .
+
+# 4. İlk commit
+git commit -m "Initial commit: Proje yapısı oluşturuldu"
+
+# 5. Dokümantasyon ekleme
+git add docs/
+git commit -m "Add: Gereksinim analizi ve UML diyagramları eklendi"
+
+# 6. Model sınıflarını ekleme
+git add Src/models/
+git commit -m "Add: User, Habit ve HabitRecord sınıfları eklendi"
+
+# 7. Servis sınıflarını ekleme
+git add Src/services/
+git commit -m "Add: Statistics ve DataManager servisleri eklendi"
+
+# 8. Arayüz ve ana uygulama
+git add Src/ui/ Src/main.py
+git commit -m "Add: Tkinter arayüzü ve ana uygulama mantığı eklendi"
+
+# 9. README ve diğer dosyalar
+git add README.md requirements.txt
+git commit -m "Add: README ve kurulum dosyaları eklendi"
+
+# 10. Uzak repository ekleme (GitHub/GitLab)
+git remote add origin <repository-url>
+
+# 11. Değişiklikleri uzak repository'e gönder
+git push -u origin master
+```
+
+## Proje İçin Önerilen Commit Mesajları
+
+1. "Initial commit: Proje yapısı oluşturuldu"
+2. "Add: Gereksinim analizi ve UML diyagramları eklendi"
+3. "Add: User, Habit ve HabitRecord model sınıfları eklendi"
+4. "Add: Statistics ve DataManager servis sınıfları eklendi"
+5. "Add: Tkinter GUI arayüzü implement edildi"
+6. "Add: Ana uygulama başlangıç dosyası eklendi"
+7. "Add: README ve kurulum talimatları eklendi"
+8. "Fix: Hata yönetimi mekanizmaları güçlendirildi"
+9. "Update: İstatistik hesaplama algoritması iyileştirildi"
+10. "Docs: Kullanım kılavuzu güncellendi"
+
+## GitHub/GitLab'a Yükleme
+
+1. GitHub veya GitLab hesabınızda yeni bir repository oluşturun
+2. Repository URL'sini kopyalayın
+3. Aşağıdaki komutları çalıştırın:
+
+```bash
+git remote add origin https://github.com/kullanici/proje-adi.git
+git branch -M main
+git push -u origin main
+```
+
+## Not
+- Bu dosya sadece talimat amaçlıdır
+- Gerçek Git komutları için Git'in kurulu olması gerekir
+- Proje zaten tamamlandığı için bu komutlar referans olarak kullanılabilir

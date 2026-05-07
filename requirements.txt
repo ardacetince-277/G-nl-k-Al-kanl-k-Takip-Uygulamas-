@@ -1,0 +1,22 @@
+# Günlük Alışkanlık Takip Uygulaması - Gerekli Kütüphaneler
+
+# Modern GUI için customtkinter
+customtkinter>=5.2.0
+
+# Standart kütüphaneler (kurulum gerekmez):
+# tkinter - GUI için (genellikle Python ile birlikte gelir)
+# json - veri saklama için
+# os - işletim sistemi işlemleri için
+# datetime - tarih ve saat işlemleri için
+# sys - sistem işlemleri için
+# re - düzenli ifadeler için
+# typing - tip ipuçları için
+
+# Not: Eğer tkinter kurulu değilse:
+# Ubuntu/Debian: sudo apt-get install python3-tk
+# Fedora: sudo dnf install python3-tkinter
+# macOS: brew install python-tk
+# Windows: Genellikle Python kurulumu ile birlikte gelir
+
+# CustomTkinter Kurulumu:
+# pip install customtkinter
